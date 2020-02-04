@@ -3,24 +3,63 @@
 	<head>
 		<title>Professional Image</title>
 	</head>
+	<style>
+	body {
+		margin: 0;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 13%;
+		background-color: #f1f1f1;
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+	}
+
+	li a {
+		display: block;
+		color: #000;
+		padding: 8px 16px;
+		text-decoration: none;
+	}
+
+	li a.active {
+		background-color: #4CAF50;
+		color: white;
+	}
+
+	li a:hover:not(.active) {
+		background-color: #555;
+		color: white;
+	}
+	</style>
 
 	<body bgcolor = "Silver">
-		
-		<h1>Professional Image</h1><br>
-		<p>I was a Robotics Engineer Intern at a company called Joby Aviation. While I was there I put together two pieces of software. One simulated aircraft which 	<br>
+		<ul>
+			<li><a href="aboutme.html">About Me</a></li>
+			<li><a href="professionalimage.html">Professional Image</a></li>
+			<li><a href="portfoliopage.html">Portfolio Page</a></li>
+			<li><a href="servicepage.html">Service Page</a></li>
+		</ul>
+			
+		<center><h1>Professional Image</h1><br></center>
+		<center><p><font size="+1">I was a Robotics Engineer Intern at a company called <a href="https://www.jobyaviation.com/">Joby Aviation</a>. While I was there I put together two pieces of software. One simulated aircraft which 	<br>
 		would generate and output coordinates to a udp socket, and an automatic antenna tracker to track the simulated aircraft. The first program was only for testing<br>
 		purposes. I used a single-board computer called the <a href="https://en.wikipedia.org/wiki/BeagleBoard">beaglebone black</a> to power the antenna tracker. The beaglebone is a linux system that allows you to control<br>
 		the GPIO pins and PWM pins. These were used to send signals to the motor controllers. I used two nema stepper motors, one for pan and one for tilt. These motors<br>
 		are extremely accurate and are used in most 3d printers. I used C++ to code the program. C++ allows you to use multithreading so when my antenna tracker received<br>
 		a coordinate through the UDP socket it would run pan and tilt motors simultaneously. I am working with Dr. Sideris on a research project. The goal of this project<br>
-		is to design and build an affordable customizable gantry-type 3D printer for large-scale concrete structural construction. I will be working with G code to run <br>
+		is to design and build an affordable customizable gantry-type 3D printer for large-scale concrete structural construction. I will be working with <a href="https://en.wikipedia.org/wiki/G-code">G code</a> to run <br>
 		the motors on this large scale 3D printer. This project is very interesting to me as it will be extremely useful technology for future construction projects. I will<br>
-		be interning for Joby Aviation again and hope to write some of the test flight simulation software. One of my aspirations is to build or work for an electric motorcycle<br>
+		be interning for Joby Aviation again and hope to write some of the test flight simulation software. One of my aspirations is to build or work for an <a href="https://www.zeromotorcycles.com/">electric motorcycle</a><br>
 		company. Working with these extremely high torque electric motors is very interesting to me. Although I know nothing about battery chemistry, battery energy density <br>
 		is also interesting.<br>
-		</p>
-		<img src="resume_website.jpg"><br>
-		<a href="first.html">Home Page</a>
+		</font></p></center>
+		<center><img src="resume_website.jpg"><br></center>
+		<center><a href="first.html"><font size="+2">Home Page</font></a></center>
 		
 		
 	</body>

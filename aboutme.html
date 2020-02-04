@@ -3,20 +3,60 @@
 	<head>
 		<title>About Me</title>
 	</head>
+	<style>
+	body {
+		margin: 0;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 13%;
+		background-color: #f1f1f1;
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+	}
+
+	li a {
+		display: block;
+		color: #000;
+		padding: 8px 16px;
+		text-decoration: none;
+	}
+
+	li a.active {
+		background-color: #4CAF50;
+		color: white;
+	}
+
+	li a:hover:not(.active) {
+		background-color: #555;
+		color: white;
+	}
+	</style>
 
 	<body bgcolor = "Silver">
+		<ul>
+			<li><a href="aboutme.html">About Me</a></li>
+			<li><a href="professionalimage.html">Professional Image</a></li>
+			<li><a href="portfoliopage.html">Portfolio Page</a></li>
+			<li><a href="servicepage.html">Service Page</a></li>
+		</ul>
 		
-		<h1>About Me</h1><br>
-		<img src="6EBCA2F2-574C-45D3-92F2-D7DCE2443E14.jpeg" width="200" height="250">
-		<p>I am a third year computer engineering student at Texas A&M University. <br>
-			My main interest is in robotics and motor control.<br>
-			My motivation for doing computer engineering is that both of my brothers are software engineers.
-		</p>
+		<center><h1>About Me</h1><br></center>
+		<center><img src="6EBCA2F2-574C-45D3-92F2-D7DCE2443E14.jpeg" width="200" height="250"></center>
+		<center><p><font size="+1">I am a third year computer engineering student at Texas A&M University. My main interest is in robotics and <br>
+					motor control. My motivation for doing computer engineering is that both of my brothers are software engineers.
+		</font></p></center>
 		
-		<a href="first.html">Home Page</a>
-		
+		<center><a href="first.html"><font size="+2">Home Page</font></a></center>
+	
+
 		
 	</body>
-
+	
+	
 
 </html>
